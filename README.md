@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Portfolio-1.0 - Alexis Roger
 
 Bienvenue dans mon **Portfolio** ! Ce projet présente mes compétences, projets et expériences professionnelles. Il est conçu pour offrir une présentation simple, claire et interactive de mon travail.
