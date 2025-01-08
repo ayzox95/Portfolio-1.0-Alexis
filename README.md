@@ -29,7 +29,7 @@ Le projet est organisé comme suit :
 
 ## 🖼️ Aperçu 
 
-![Aperçu du Portfolio](assets/images/portfolio-preview1.png)
+![Aperçu du Portfolio](assets/images/portfolio-preview.png2.png)
 
 ![Compétences en un coup d'œil](assets/images/portfolio-preview2.png)
 
