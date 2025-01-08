@@ -31,7 +31,7 @@ Le projet est organisé comme suit :
 
 ![Aperçu du Portfolio](assets/images/portfolio-preview1.png)
 
-![Compétences en un coup d'œil](assets/images/portfolio-preview.png2)
+![Compétences en un coup d'œil](assets/images/portfolio-preview2.png)
 
 ## 📦 Installation
 
