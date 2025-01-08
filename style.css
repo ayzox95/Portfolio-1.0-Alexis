@@ -1,0 +1,346 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style du body avec fond noir */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* fond noir */
+    color: #e1e1e1; /* texte clair */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Mise en forme des titres */
+h1, h2, h3, p {
+    margin-bottom: 20px;
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+    color: #00FF00; /* Vert fluo */
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #32CD32; /* Vert lime */
+}
+
+/* Header avec animation */
+header {
+    background: linear-gradient(45deg, #00FF00, #32CD32); /* dégradé vert */
+    padding: 80px 20px;
+    text-align: center;
+    animation: slideIn 1s ease-out;
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.5); /* ombre verte */
+}
+
+/* Titre principal dans le header */
+header h1 {
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-out;
+    text-shadow: 0 0 10px #32CD32, 0 0 20px #32CD32;
+}
+
+/* Sous-titre du header */
+header .subtitle {
+    font-size: 1.5rem;
+    color: #e1e1e1;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+/* Section principale */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Animation fadeIn pour les éléments */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animation slideIn pour le header */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Section Profil */
+.profile-container {
+    margin-top: 40px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6); /* ombre verte */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    border: 3px solid #00FF00; /* bordure verte */
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+/* Image de profil */
+.profile-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.8); /* effet de zoom avec ombre */
+}
+
+.profile-container img:hover {
+    transform: scale(1.15);
+}
+
+/* Section Projets */
+.project {
+    background-color: #1a1a1d;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 255, 0, 0.5); /* ombre verte plus marquée */
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    color: #00FF00;
+    text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
+}
+
+.project p {
+    color: #e1e1e1;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00FF00;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #32CD32;
+}
+
+/* Formulaire de contact */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1a1a1d;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #e1e1e1;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #00FF00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #32CD32;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6); /* effet vert */
+}
+
+/* Footer */
+footer {
+    background-color: #121212;
+    padding: 20px;
+    text-align: center;
+    color: #e1e1e1;
+    margin-top: 60px;
+    box-shadow: 0 -4px 20px rgba(0, 255, 0, 0.3); /* ombre verte */
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Section CV */
+#cv .cv-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#cv .cv-item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.4);
+    width: 45%;
+    transition: transform 0.3s ease-in-out;
+}
+
+#cv .cv-item:hover {
+    transform: scale(1.05);
+}
+
+#cv h3 {
+    color: #00FF00;
+    margin-bottom: 10px;
+}
+
+#cv ul {
+    color: #e1e1e1;
+    list-style-type: none;
+}
+
+#cv .cv-year {
+    font-weight: bold;
+    color: #00FF00;
+    width: 120px;
+    display: inline-block;
+}
+
+#cv .cv-description {
+    color: #e1e1e1;
+    font-style: italic;
+    display: inline-block;
+    width: calc(100% - 130px); /* Laisse de l'espace pour l'année */
+}
+
+/* Ajout des tirets pour les éléments de liste */
+#cv .cv-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cv .cv-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+#cv .cv-list li::before {
+    content: "•";  /* Tiret comme puce */
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    color: #00FF00;
+}
+
+/* Section Loisirs et Centres d'intérêt */
+#hobbies ul {
+    color: #e1e1e1;
+    list-style-type: none; /* Retirer les puces par défaut */
+    padding: 0;
+}
+
+#hobbies ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+#hobbies ul li::before {
+    content: "•";  /* Tiret comme puce */
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    color: #00FF00;
+}
+
+/* Animation d'apparition */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .profile-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Adapter les sections en une seule colonne sur mobile */
+    #cv .cv-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #cv .cv-item {
+        width: 100%;
+    }
+}
