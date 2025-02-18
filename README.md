@@ -36,7 +36,7 @@ Le projet est organisé comme suit :
 
 1. Clonez ce dépôt sur votre machine :
    ```bash
-   git clone https://github.com/Azox95/Portfolio-1.0-Alexis.git
+   git clone https://github.com/Ayzox95/Portfolio-1.0-Alexis.git
    
 ## 🖋️ Auteur
 
